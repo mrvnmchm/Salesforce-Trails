@@ -1,0 +1,8 @@
+@isTest
+public class TestVerifyDate {
+    
+    @isTest static void testCheckDates() {
+        date d1 = VerifyDate.CheckDates(Date.today(),Date.today().addDays(32));
+        date d2 = VerifyDate.CheckDates(Date.today(),Date.today().addDays(2));
+    }
+}
