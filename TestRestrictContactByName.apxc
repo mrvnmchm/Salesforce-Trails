@@ -1,0 +1,10 @@
+@isTest
+public class TestRestrictContactByName {
+
+    @isTest static void testLastName() {
+        Contact c = new 
+            Contact(FirstName='firstNameTest', LastName='INVALIDNAME');
+        		database.SaveResult s =database.insert(c, false);
+        system.assert(!s.issuccess());
+    }
+}
